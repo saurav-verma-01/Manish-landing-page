@@ -105,6 +105,10 @@ li {
   z-index: 2;
   padding: 2rem;
 }
+.hero-img {
+  display: block;
+  margin: 0 auto;
+}
 .hero img {
   object-fit: cover;
   border-radius: 1rem;
