@@ -112,6 +112,10 @@ li {
   font-family: "Alice", serif;
   font-size: 2.25rem;
 }
+.heading-primary {
+  font-family: "Alice", serif;
+  font-size: 3rem;
+}
 
 .cards .container {
   display: flex;
@@ -166,7 +170,7 @@ li {
 .footer {
   margin-top: 5rem;
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   background-color: #000;
   color: #fff;
   padding: 4rem 0;
@@ -204,4 +208,57 @@ li {
 .card-content a {
   margin-top: 1rem;
   padding: 1rem 2rem;
+}
+
+.footer p {
+  font-family: "Alice", serif;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-data {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  align-items: center;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-content p {
+  font-size: 1.25rem;
+}
+.social-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+
+  border-radius: 50%;
+}
+.social-icon i {
+  color: #000;
+  scale: 1.5;
+  transition: all 0.5s ease;
+}
+.social-icon i:hover {
+  scale: 1.8;
 }
