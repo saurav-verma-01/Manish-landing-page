@@ -200,3 +200,7 @@ li {
   transition: all 0.5s ease;
   border-bottom: 2px solid transparent;
 }
+.card-content a {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+}
