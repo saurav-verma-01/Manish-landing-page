@@ -86,6 +86,7 @@ li {
   background-color: #000;
   color: #fff;
   border: 2px solid transparent;
+  border-radius: 1rem;
 }
 .primary-cta:is(:hover, :focus) {
   background-color: transparent;
