@@ -275,7 +275,19 @@ li {
 .social-icon i:hover {
   scale: 1.8;
 }
+.about {
+  margin-bottom: 5rem;
+}
+.about .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
 
+.foot-banner img {
+  border-radius: 1rem;
+}
 /* Laptop Design */
 
 /* @media screen and (max-width: 70em) {
