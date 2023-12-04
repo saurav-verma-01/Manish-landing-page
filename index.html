@@ -34,7 +34,7 @@
               src="./assets/logo.webp"
               alt="mind control"
               class="logo"
-              style="width: 80px; height: 80px"
+              style="width: 100%; height: auto"
             />
           </a>
 
@@ -45,11 +45,21 @@
         </nav>
 
         <section class="hero">
-          <img
-            src="./assets/b3.png"
-            alt=""
-            style="width: 960px; display: block; margin: 0 auto; height: auto"
-          />
+          <picture
+            class="hero-img"
+            style="
+              max-width: 960px;
+              display: block;
+              margin: 0 auto;
+              height: auto;
+            "
+          >
+            <source
+              srcset="./assets/banner-tab.webp"
+              media="(max-width: 70em)"
+            />
+            <img src="./assets/b3.png" alt="" />
+          </picture>
         </section>
       </div>
     </header>
