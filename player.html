@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Mastering Mind Control - Dark Psychology and Influence Mastery | Player
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="player.css" />
+  </head>
+  <body>
+    <h3 class="heading">Video Gallery</h3>
+    <div class="container">
+      <div class="main-video">
+        <div class="video">
+          <video
+            class="main-video-el"
+            src="./assets/videos/140.mp4"
+            controls
+            loop
+            autoplay
+          ></video>
+          <h3 class="title">01. Video Title Goes Here</h3>
+        </div>
+      </div>
+
+      <div class="video-list">
+        <div class="vid active">
+          <video src="./assets/videos/140.mp4" muted></video>
+          <h3 class="title">01. Title Goes here</h3>
+        </div>
+        <div class="vid">
+          <video src="./assets/videos/175.mp4" muted></video>
+          <h3 class="title">02. Title Goes here</h3>
+        </div>
+        <div class="vid">
+          <video src="./assets/videos/graphic.mp4" muted></video>
+          <h3 class="title">03. Title Goes here</h3>
+        </div>
+        <div class="vid">
+          <video src="./assets/videos/ink.mp4" muted></video>
+          <h3 class="title">04. Title Goes here</h3>
+        </div>
+        <div class="vid">
+          <video src="./assets/videos/jellyfish.mp4" muted></video>
+          <h3 class="title">05. Title Goes here</h3>
+        </div>
+        <div class="vid">
+          <video src="./assets/videos/nature.mp4" muted></video>
+          <h3 class="title">06. Title Goes here</h3>
+        </div>
+        <div class="vid">
+          <video src="./assets/videos/sea.mp4" muted></video>
+          <h3 class="title">05. Title Goes here</h3>
+        </div>
+        <div class="vid">
+          <video src="./assets/videos/snake.mp4" muted></video>
+          <h3 class="title">06. Title Goes here</h3>
+        </div>
+        <div class="vid">
+          <video src="./assets/videos/storm.mp4" muted></video>
+          <h3 class="title">07. Title Goes here</h3>
+        </div>
+        <div class="vid">
+          <video src="./assets/videos/waterfall.mp4" muted></video>
+          <h3 class="title">08. Title Goes here</h3>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let listVideo = document.querySelectorAll(".vid");
+      let mainVideo = document.querySelector(".main-video-el");
+      let title = document.querySelector(".main-video .title");
+
+      listVideo.forEach((item) => {
+        item.onclick = () => {
+          listVideo.forEach((vid) => vid.classList.remove("active"));
+          item.classList.add("active");
+
+          if (item.classList.contains("active")) {
+            let src = item.children[0].getAttribute("src");
+            let text = item.children[1].innerHTML;
+            mainVideo.src = src;
+            title.innerHTML = text;
+          }
+        };
+      });
+    </script>
+  </body>
+</html>
